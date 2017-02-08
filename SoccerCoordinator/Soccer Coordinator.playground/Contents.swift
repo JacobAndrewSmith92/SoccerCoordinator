@@ -2,56 +2,80 @@ import UIKit
 
 // Collections that will hold player data and league information
 
-var players: [String] = []
+var allPlayers: [String] = []
 var teamSharks: [String] = []
 var teamDragons: [String] = []
 var teamRaptors: [String] = []
+var experiencedPlayers: [String] = []
+var inexperiencedPlayers: [String] = []
 
+// Dictionary representing player name & experience
 
-// Dictionary representing player name, experience, & height
-
-var playerExperienceAndHeight: [String: (experience: Bool, height: Int)] = [
-    "Joe Smith": (true, 42),
-    "Jill Tanner": (true, 36),
-    "Bill Bon": (true, 43),
-    "Eva Gordon": (false, 45),
-    "Matt Gill": (false, 40),
-    "Kimmy Stein": (false, 41),
-    "Sammy Adams": (false, 45),
-    "Karl Saygan": (true, 42),
-    "Suzane Greenberg": (true, 44),
-    "Sal Dali": (false, 41),
-    "Joe Kavalier": (false, 39),
-    "Ben Finkelstein": (false, 44),
-    "Diego Soto": (true, 41),
-    "Chloe Alaska": (false, 47),
-    "Arnold Willis": (false, 43),
-    "Phillip Helm": (true, 44),
-    "Les Clay": (true, 42),
-    "Herschel Krustofski": (true, 45)
+let playerNameAndExperience: [String: Bool] = [
+    "Joe Smith": true,
+    "Jill Tanner": true,
+    "Bill Bon": true,
+    "Eva Gordon": false,
+    "Matt Gill": false,
+    "Kimmy Stein": false,
+    "Sammy Adams": false,
+    "Karl Saygan": true,
+    "Suzane Greenberg": true,
+    "Sal Dali": false,
+    "Joe Kavalier": false,
+    "Ben Finkelstein": false,
+    "Diego Soto": true,
+    "Chloe Alaska": false,
+    "Arnold Willis": false,
+    "Phillip Helm": true,
+    "Les Clay": true,
+    "Herschel Krustofski": true
 ]
 
-// Array representing player's guardian
+// Array representing player's guardian & height
 
-var guardians = [
-    "Jim and Jan Smith",
-    "Clara Tanner",
-    "Sara and Jenny Bon",
-    "Wendy and Mike Gordon",
-    "Charles and Sylvia Gill",
-    "Bill and Hillary Stein",
-    "Jeff Adams",
-    "Heather Bledsoe",
-    "Henrietta Dumas",
-    "Gala Dali",
-    "Sam and Elaine Kavalier",
-    "Aaron and Jill Finkelstein",
-    "Robin and Sarika Soto",
-    "David and Jamie Alaska",
-    "Claire Willis",
-    "Thomas Helm and Eva Jones",
-    "Wynonna Brown",
-    "Hyman and Rachel Krustofski"
+var guardiansAndHeight: [String: Int] = [
+    "Jim and Jan Smith": 42,
+    "Clara Tanner": 36,
+    "Sara and Jenny Bon": 43,
+    "Wendy and Mike Gordon": 45,
+    "Charles and Sylvia Gill": 40,
+    "Bill and Hillary Stein": 41,
+    "Jeff Adams": 45,
+    "Heather Bledsoe": 42,
+    "Henrietta Dumas": 44,
+    "Gala Dali": 41,
+    "Sam and Elaine Kavalier": 39,
+    "Aaron and Jill Finkelstein": 44,
+    "Robin and Sarika Soto": 41,
+    "David and Jamie Alaska": 47,
+    "Claire Willis": 43,
+    "Thomas Helm and Eva Jones": 44,
+    "Wynonna Brown": 42,
+    "Hyman and Rachel Krustofski": 45
 ]
+
+
+// For In Loop to iterate over dictionary and append values to either experienced or inexperienced variables && append to allPlayers variable
+
+
+for (key,value) in playerNameAndExperience {
+    if value == true {
+        experiencedPlayers.append(key)
+        allPlayers.append(key)
+    } else {
+        inexperiencedPlayers.append(key)
+        allPlayers.append(key)
+    }
+}
+
+// Wh
+
+while teamSharks.count < 6 {
+    
+}
+
+
+
 
 
