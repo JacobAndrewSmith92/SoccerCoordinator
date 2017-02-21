@@ -56,7 +56,6 @@ import UIKit
 
 // Team variables that will hold evenly divided teams
 
-
 var teamSharks: [String] = []
 var teamDragons: [String] = []
 var teamRaptors: [String] = []
@@ -70,53 +69,38 @@ var inexperiencedPlayers: [String] = []
 // Players represented by a Dictionary with String keys and the corresponding values.
 
 
-let player1: [String: String] = ["player": "Joe Smith", "experience": "true", "parents": "Jim and Jan Smith", "height": "42"]
-let player2: [String: String] = ["player": "Jill Tanner", "experience": "true", "parents": "Clara Tanner", "height": "36"]
-let player3: [String: String] = ["player": "Bill Bon", "experience": "true", "parents": "Sara and Jenny Bon", "height": "43"]
-let player4: [String: String] = ["player": "Eva Gordon", "experience": "false", "parents": "Wendy and Mike Gordon", "height": "45"]
-let player5: [String: String] = ["player": "Matt Gill", "experience": "false", "parents": "Charles and Sylvia Gill", "height": "40"]
-let player6: [String: String] = ["player": "Kimmy Stein", "experience": "false", "parents": "Bill and Hillary Stein", "height": "41"]
-let player7: [String: String] = ["player": "Sammy Adams", "experience": "false", "parents": "Jeff Adams", "height": "45"]
-let player8: [String: String] = ["player": "Karl Saygan", "experience": "true", "parents": "Heather Bledsoe", "height": "42"]
-let player9: [String: String] = ["player": "Suzane Greenberg", "experience": "true", "parents": "Henrietta Dumas", "height": "44"]
-let player10: [String: String] = ["player": "Sal Dali", "experience": "false", "parents": "Gala Dali", "height": "41"]
-let player11: [String: String] = ["player": "Joe Kavalier", "experience": "false", "parents": "Sam and Elaine Kavalier", "height": "39"]
-let player12: [String: String] = ["player": "Ben Finkelstein", "experience": "false", "parents": "Aaron and Jill Finkelstein", "height": "44"]
-let player13: [String: String] = ["player": "Diego Soto", "experience": "true", "parents": "Robin and Sarika Soto", "height": "41"]
-let player14: [String: String] = ["player":"Chloe Alaska", "experience": "false", "parents": "David and Jamie Alaska", "height": "47"]
-let player15: [String: String] = ["player":"Arnold Willis", "experience": "false", "parents": "Claire Willis", "height": "43"]
-let player16: [String: String] = ["player":"Phillip Helm", "experience": "true", "parents": "Thomas Helm and Eva Jones", "height": "44"]
-let player17: [String: String] = ["player":"Les Clay", "experience": "true", "parents": "Wynonna Brown", "height": "42"]
-let player18: [String: String] = ["player":"Herschel Krustofski", "experience": "true", "parents": "Hyman and Rachel Krustofski", "height": "45"]
+var player1: [String: String] = ["player": "Joe Smith", "experience": "true", "parents": "Jim and Jan Smith", "height": "42"]
+var player2: [String: String] = ["player": "Jill Tanner", "experience": "true", "parents": "Clara Tanner", "height": "36"]
+
+
+let player3: [String: Any] = ["player": "Bill Bon", "experience": true, "parents": "Sara and Jenny Bon", "height": 43]
+let player4: [String: Any] = ["player": "Eva Gordon", "experience": false, "parents": "Wendy and Mike Gordon", "height": 45]
+let player5: [String: Any] = ["player": "Matt Gill", "experience": false, "parents": "Charles and Sylvia Gill", "height": 40]
+let player6: [String: Any] = ["player": "Kimmy Stein", "experience": false, "parents": "Bill and Hillary Stein", "height": 41]
+let player7: [String: Any] = ["player": "Sammy Adams", "experience": false, "parents": "Jeff Adams", "height": 45]
+let player8: [String: Any] = ["player": "Karl Saygan", "experience": true, "parents": "Heather Bledsoe", "height": 42]
+let player9: [String: Any] = ["player": "Suzane Greenberg", "experience": true, "parents": "Henrietta Dumas", "height": 44]
+let player10: [String: Any] = ["player": "Sal Dali", "experience": false, "parents": "Gala Dali", "height": 41]
+let player11: [String: Any] = ["player": "Joe Kavalier", "experience": false, "parents": "Sam and Elaine Kavalier", "height": 39]
+let player12: [String: Any] = ["player": "Ben Finkelstein", "experience": false, "parents": "Aaron and Jill Finkelstein", "height": 44]
+let player13: [String: Any] = ["player": "Diego Soto", "experience": true, "parents": "Robin and Sarika Soto", "height": 41]
+let player14: [String: Any] = ["player":"Chloe Alaska", "experience": false, "parents": "David and Jamie Alaska", "height": 47]
+let player15: [String: Any] = ["player":"Arnold Willis", "experience": false, "parents": "Claire Willis", "height": 43]
+let player16: [String: Any] = ["player":"Phillip Helm", "experience": true, "parents": "Thomas Helm and Eva Jones", "height": 44]
+let player17: [String: Any] = ["player":"Les Clay", "experience": true, "parents": "Wynonna Brown", "height": 42]
+let player18: [String: Any] = ["player":"Herschel Krustofski", "experience": true, "parents": "Hyman and Rachel Krustofski", "height": 45]
 
 // A manually created single collection named 'players' that contains all information for all 18 players.
 
-
-var players: [String] = []
-
-players.append("\(player1), \(player2), \(player3), \(player4), \(player5), \(player6), \(player7), \(player8), \(player9), \(player10), \(player11), \(player12), \(player13), \(player14), \(player15), \(player16), \(player17), \(player18)")
+var players: [String: String] = [:]
 
 
 
 
 
+// Testing to see if this works
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ var players: [Dictionary] = [player1, player2] // "\(player3)", "\(player4)", "\(player5)", "\(player6)", "\(player7)", "\(player8)", "\(player9)", "\(player10)", "\(player11)", "\(player12)", "\(player13)", "\(player14)", "\(player15)", "\(player16)", "\(player17)", "\(player18)"]
 
 
 
@@ -206,9 +190,6 @@ for (key, value) in playerNameAndExperience {
  teamDragons.append(key)
  } else {}
 } 
- 
-teamSharks.count
-allPlayers
-
 */
+
 
