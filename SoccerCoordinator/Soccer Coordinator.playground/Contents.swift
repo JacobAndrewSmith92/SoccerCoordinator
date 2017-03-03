@@ -100,41 +100,43 @@ for player in players {
 }
 
 
-var assigningTeams = [experiencedPlayers, inexperiencePlayers] //
+var assigningExperiencedTeams = [experiencedPlayers] // Represents all players sorted by experience
+var assigningInexperiencedTeams = [inexperiencePlayers]
 var experiencedPlayerCounter = experiencedPlayers.count // Represents how many experienced players are in the league that year
 var inexperiencedPlayerCounter = inexperiencePlayers.count // Represents how many inexperienced players are in the league that year
 var equalTeams = league.count // Represents how many teams are in the league that year
 
-for var addingExperiencedPlayer in experiencedPlayers {
+
+for var addingExperiencedPlayer in assigningExperiencedTeams {
 
 while experiencedPlayerCounter > equalTeams {
-    teamSharks.append(addingExperiencedPlayer.remove(at: experiencedPlayers[(equalTeams - equalTeams)]))
+    teamSharks.append(addingExperiencedPlayer[0])
+    addingExperiencedPlayer.remove(at: 0)
     experiencedPlayerCounter -= 1
-    teamRaptors.append(addingExperiencedPlayer)
+    teamRaptors.append(addingExperiencedPlayer[0])
+    addingExperiencedPlayer.remove(at: 0)
     experiencedPlayerCounter -= 1
-    teamDragons.append(addingExperiencedPlayer)
-    experiencedPlayerCounter -= 1
+    teamDragons.append(addingExperiencedPlayer[0])
+    addingExperiencedPlayer.remove(at: 0)
     }
 }
-// print(teamSharks)
-
-print(teamRaptors)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ for var addingInexperiencedPlayer in assigningInexperiencedTeams {
+ 
+ while inexperiencedPlayerCounter > equalTeams {
+ teamSharks.append(addingInexperiencedPlayer[0])
+ addingInexperiencedPlayer.remove(at: 0)
+ inexperiencedPlayerCounter -= 1
+ teamRaptors.append(addingInexperiencedPlayer[0])
+ addingInexperiencedPlayer.remove(at: 0)
+ inexperiencedPlayerCounter -= 1
+ teamDragons.append(addingInexperiencedPlayer[0])
+ addingInexperiencedPlayer.remove(at: 0)
+    }
+}
 
 
 
