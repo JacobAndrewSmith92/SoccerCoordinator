@@ -90,25 +90,28 @@ while experiencedPlayerCounter > equalTeams {
     }
 }
 
-var letters: String
 
 //
 
+
+var letters: String
+
+
 for teamDragonLetters in teamDragons {
-    letters = ("Hello \(teamDragonLetters["guardian"]!), My name is Stephen Smaug. My assistants and I would like to welcome you and your Dynamic Dandy Dragon, \(teamDragonLetters["name"]!), to our team. We are looking forward to all that is to come this season. In order to properly prepare, we will have our inaugural practice on March 17, at 1:00 pm. Please make sure to bring your cleats, shinguards, capri-suns(for the coaches), and orange slices. We can't wait to begin the season with you.")
+    letters = ("Hello \(teamDragonLetters["guardian"]!), My name is Stephen Smaug. Welcome to the Dragons. My assistants and I would like to welcome you and your Dynamic Dandy Dragon, \(teamDragonLetters["name"]!), to our team. We are looking forward to all that is to come this season. In order to properly prepare, we will have our inaugural practice on March 17, at 1:00 pm. Please make sure to bring your cleats, shinguards, capri-suns(for the coaches), and orange slices. We can't wait to begin the season with you.")
         print(letters)
 }
 
 
 for teamSharkLetters in teamSharks {
-    letters = ("Hello \(teamSharkLetters["guardian"]!), My name is Coach Bruce Bite. My assistants and I would like to welcome you and your Supersonic Spunky Shark, \(teamSharkLetters["name"]!), to our team. We are looking forward to all that is to come this season. In order to properly prepare, we will have our inaugural practice on March 17, at 3:00 pm. Please make sure to bring your cleats, shinguards, capri-suns(for the coaches), and orange slices. We can't wait to begin the season with you.")
+    letters = ("Hello \(teamSharkLetters["guardian"]!), My name is Coach Bruce Bite. Welcome to the Sharks. My assistants and I would like to welcome you and your Supersonic Spunky Shark, \(teamSharkLetters["name"]!), to our team. We are looking forward to all that is to come this season. In order to properly prepare, we will have our inaugural practice on March 17, at 3:00 pm. Please make sure to bring your cleats, shinguards, capri-suns(for the coaches), and orange slices. We can't wait to begin the season with you.")
         print(letters)
 }
 
 
 
  for teamRaptorLetters in teamRaptors {
-    letters = ("Hello \(teamRaptorLetters["guardian"]!), My name is Coach Alan Grant. My assistants and I would like to welcome you and your Rockin' Rugged Raptor, \(teamRaptorLetters["name"]!), to our team. We are looking forward to all that is to come this season. In order to properly prepare, we will have our inaugural practice on March 18, at 1:00 pm. Please make sure to bring your cleats, shinguards, capri-suns(for the coaches), and orange slices. We can't wait to begin the season with you.")
+    letters = ("Hello \(teamRaptorLetters["guardian"]!), My name is Coach Alan Grant. Welcome to the Raptors. My assistants and I would like to welcome you and your Rockin' Rugged Raptor, \(teamRaptorLetters["name"]!), to our team. We are looking forward to all that is to come this season. In order to properly prepare, we will have our inaugural practice on March 18, at 1:00 pm. Please make sure to bring your cleats, shinguards, capri-suns(for the coaches), and orange slices. We can't wait to begin the season with you.")
         print(letters)
  }
  
